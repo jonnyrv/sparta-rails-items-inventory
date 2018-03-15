@@ -1,0 +1,38 @@
+
+<h1>Here is your selected Item: <%= @item.description  %></h1>
+
+
+<p>
+    Name:
+    <%= @item.serial_number %>
+</p>
+
+<p>
+    Description:
+    <%= @item.description %>
+</p>
+
+<p>
+    Supplier:
+    <%= @item.supplier %>
+</p>
+
+<p>
+    Status:
+    <%= @item.status %>
+</p>
+
+<p>
+    Lender:
+    <%= @item.lender %>
+</p>
+
+
+
+<%=link_to 'Back', items_path, :class => "btn" %>
+
+
+
+
+
+

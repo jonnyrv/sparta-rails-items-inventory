@@ -1,0 +1,10 @@
+
+<h1>Edit Page For <%= @item.description %> with SERIAL NUMBER : <%= @item.serial_number %> </h1>
+
+<%= render 'form', item: @item %>
+<%= link_to 'Show', @item, :class => "btn_over"  %>
+<%= link_to 'Back', items_path , :class => "btn_over" %>
+
+
+
+

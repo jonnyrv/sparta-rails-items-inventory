@@ -1,0 +1,35 @@
+
+<h1>Items Inventory </h1>
+
+<%= link_to 'Add Item to the Inventory', items_new_path, :class => "btn" %>
+
+<h2> Did you find all the items you need? If not add the item you want by clicking the Add item button</h2>
+
+<table>   
+    <thead>
+        <th>Serial Number</th>
+        <th>Description</th>
+        <th>Supplier</th>
+        <th>Status</th>
+        <th>Lender</th>
+    </thead>
+
+    <tbody>
+        <% @item.each do |item| %>
+            <tr>
+                <td style="padding:20px"><%= item.serial_number%></td>
+                <td><%= item.description %></td>
+                <td><%= item.supplier %></td>
+                <td style="color: green;"><%= item.status %></td>
+                <td><%= item.lender %></td>
+                <td><%= link_to 'Show', item, :class => "btn" %></td>
+                <td><%= link_to 'Edit', edit_item_path(item), :class => "btn" %></td> 
+                <td><%= link_to 'Destroy', item, method: :delete, data: {confirm: 'Are you sure?'} , :class => "btn"  %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
+
+
+
+

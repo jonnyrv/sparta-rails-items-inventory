@@ -1,0 +1,29 @@
+
+<%=form_for(@item) do |f| %>
+    <p>
+    <%=f.label 'Serial Number', :class => "textForm"  %><br>
+    <%=f.text_field :serial_number, :class => "form" %>
+    </p>
+    <p>
+    <%=f.label 'Description', :class => "textForm"  %><br>
+    <%=f.text_field :description, :class => "form" %>
+    </p>
+    <p>
+    <%=f.label 'Suplier', :class => "textForm"  %><br>
+    <%=f.text_field :supplier, :class => "form" %>
+    </p>
+    <p>
+    <%=f.label 'Status', :class => "textForm"  %><br>
+    <%=f.text_field :status, :class => "form" %>
+    </p>
+    <p>
+    <%=f.label 'Lender', :class => "textForm"  %><br>
+    <%=f.text_field :lender, :class => "form" %>
+    </p>
+    <%=f.submit 'Add', :class => "btn" %>
+<%end%>
+
+
+
+
+
